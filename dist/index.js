@@ -6,6 +6,18 @@ class KotlinToDart {
         this.kotlinArea = kotlinArea;
         this.dartArea = dartArea;
         this.parser = parser;
+        this.kotlinArea.value = `
+      data class Member(
+          val id: String? = null,
+          var type: List<MemberType> = emptyList(),
+          var email: String? = null,
+          var phoneNumber: String? = null,
+          var password: String? = null,
+          val createdDate: LocalDateTime? = null,
+          val modifyDateTime: LocalDateTime? = null
+      )
+    `;
+        this.handleChangeKotlinAreaValue(this.kotlinArea.value);
         this.kotlinArea.addEventListener('change', (event) => {
             // @ts-ignore
             this.handleChangeKotlinAreaValue(event.target.value);
