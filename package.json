@@ -1,0 +1,17 @@
+{
+  "name": "kotlin-to-dart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:pksung1/kotlin-to-dart.git",
+  "author": "vidi <pksung1@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "watch": "tsc-watch --outDir ./dist"
+  },
+  "devDependencies": {
+    "tsc-watch": "^6.0.0",
+    "typescript": "^4.9.4"
+  }
+}
