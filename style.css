@@ -1,0 +1,22 @@
+html, body {
+  background-color: aliceblue;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  padding: 0 50px 0;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.area{
+  flex: 1;
+}
+
+.area textarea {
+  width: 100%;
+  flex: 1;
+  min-height: 500px;
+}
