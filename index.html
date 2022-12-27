@@ -36,5 +36,23 @@
       
     </textarea>
   </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyAEE8unfvKPMVTAWNyFPlAHPWQOWBieoio",
+      authDomain: "kotlin-to-dart.firebaseapp.com",
+      projectId: "kotlin-to-dart",
+      storageBucket: "kotlin-to-dart.appspot.com",
+      messagingSenderId: "578051050553",
+      appId: "1:578051050553:web:1a1d87cff63e5d8ed6d1e8",
+      measurementId: "G-V261DB73ZV"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </body>
 </html>
