@@ -2,6 +2,17 @@ html, body {
   background-color: aliceblue;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header p {
+  padding: 0;
+  margin: 3px;
+}
+
 .wrapper {
   box-sizing: border-box;
   padding: 0 50px 0;
@@ -19,4 +30,14 @@ html, body {
   width: 100%;
   flex: 1;
   min-height: 500px;
+}
+
+.dependencies {
+  padding: 50px;
+}
+
+.dependencies .wrapper {
+  padding: 20px; 
+  width: 100%;
+  background-color: beige;
 }
